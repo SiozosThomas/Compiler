@@ -44,11 +44,7 @@ Ocean's Grammar:
 
 <int_array_rule>		::= ; | = { <many_digits> } ; 
 
-<many_digits>		::= digit | (digit)*
-
-                                                                                                                                                                         
-													      14
-                                                         Ocean Compiler                                                           
+<many_digits>		::= digit | (digit)*                                      
 
 <init_int_rule>		::= ε | ; | = ( <expression> )* ;
 
@@ -87,12 +83,7 @@ Ocean's Grammar:
 <assignment>		::= int <local_array_or_not>
 					| id = (<expression>)* ;
 					| double id = (<expression>)*;
-					| double id ;
-                                                                                                                                                                         
-													      15
-                                                          Ocean Compiler                                                          
-
-
+					| double id ;                                                   
 					| char id = (<expression>)*;
 					| char id ;
 					| object id id <init_object>
@@ -128,12 +119,7 @@ Ocean's Grammar:
 <caserule>			::= ε | case <id_char_digit>: (<method_block>)* break;
 					| default: break;
 					| default: (<method_block>)* break;
-
-                                                                                                                                                                         
-													      16
-                                                          Ocean Compiler                                                          
-
-
+                                                   
 <id_char_digit>		::= id | char | digit
 
 <printstat>			::= print ( (<inside_print>)* );
@@ -170,15 +156,11 @@ Ocean's Grammar:
 					| char | <array_expr> <operations> <array_expr>
 					| <array_expr> <operations> | id <operations> id
 					| id <operations> digit | id <operations> double
-                                                                                                                                                                         
-													      17
-                                                          Ocean Compiler                                                          
-
-
-
 					| double <operations> id | digit <operations> id
 					| ( (<expression>)* ) | <operations> (  (<expression>)* )
-					| digit <operations> | id <operations> | (<expression>)* 					<operations> digit | (<expression>)* <operations> 						<array_expr> | (<expression>)* <operations> id | double
+					| digit <operations> | id <operations> | (<expression>)* 					
+					| <operations> digit | (<expression>)* <operations> <array_expr>
+					| (<expression>)* <operations> id | double
 
 <array_expr>		::= id [digit]
 
