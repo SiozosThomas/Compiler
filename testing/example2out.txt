@@ -1,0 +1,51 @@
+struct example2
+{
+	int a;
+	double b = 2.200000;
+};
+void example2@constructor0(example2 self)
+{
+	self.a = 2;
+}
+int example2@method(example2 self, int a)
+{
+	int c = 0;
+	for (int i = 0; i < a; i++)
+	{
+		c =c +  5;
+	}
+	while (i < c *  2)
+	{
+		c =c -  5;
+	}
+	switch(c)
+	{
+		case 1: 
+			printf (' %d', c);
+			break;
+		case 2: 
+			printf (' %f', self.b);
+			break;
+		default:
+			break;
+	}
+	if (c ==  0)
+	{
+		return c;
+	}
+	elif (c >  0)
+	{
+		c =c +  2;
+	}
+	else {
+		c =c -  2;
+	}
+	return c;
+}
+int main() {
+	int a = 0;
+	struct example2 ob1;
+	ob1.example2@constructor0(ob1);
+	a = ob1.method(ob1,  2);
+	return 0;
+}

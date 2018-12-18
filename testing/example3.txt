@@ -1,0 +1,40 @@
+class example3
+{
+	public
+	int a = 2;
+	double b;
+	object example3 ob;
+	endpublic
+	example3() {
+	}
+	abstract method();
+}
+
+interface ex {
+	m1();
+	m2();
+}
+
+class example1 extends example3 {
+	void method() {
+		a = 0;
+		super();
+	}
+}
+
+class example2 extends ex {
+	void m1() {
+		int b = 1;
+	}
+	void m2(int[2] a) {
+		int a2 = 1;
+	}
+}
+
+main() {
+	object example1 ob1;
+	call ob1.method();
+	object example2 ob2;
+	int[2] a;
+	call ob2.m2(a);
+}

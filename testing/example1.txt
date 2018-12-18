@@ -1,0 +1,25 @@
+class example1
+{
+	public
+	int a;
+	int a1 = 0;
+	double b;
+	double b1 = 0;
+	char c;
+	char c1 = 'a';
+	int[2] d;
+	int[3] d1 = {1, 2, 3};
+	endpublic
+	example1() {
+		int[2] d;
+		int[3] d1 = {1, 2, 3};
+		a = a1;
+		a = a1 + 1;
+		b = b + 3.2;
+	}
+}
+
+main() {
+	object example1 ob = example1();
+	call ob.example1();
+}

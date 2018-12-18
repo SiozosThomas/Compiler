@@ -1,0 +1,37 @@
+struct example3
+{
+	int a = 2;
+	double b;
+	struct example3 ob;
+};
+void example3@constructor0(example3 self)
+{
+}
+struct example1
+{
+};
+void example1@method(example1 self, example3 example3self)
+{
+	example3self.a = 0;
+	struct example3 custom_object0;
+	custom_object0.example3(custom_object0);
+}
+struct example2
+{
+};
+void example2@m1(example2 self, ex exself)
+{
+	int b = 1;
+}
+void example2@m2(example2 self, ex exself, int a[2])
+{
+	int a2 = 1;
+}
+int main() {
+	struct example1 ob1;
+	ob1.method(ob1);
+	struct example2 ob2;
+	int a[2];
+	ob2.m2(ob2, a);
+	return 0;
+}

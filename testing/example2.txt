@@ -1,0 +1,44 @@
+class example2
+{
+	public
+	int a;
+	double b = 2.2;
+	endpublic
+	example2() {
+		a = 2; 
+	}
+	int method(int a) {
+		int c = 0;
+		for(int i = 0; i < a; i++) {
+			c = c + 5;
+		}
+		while(i < c * 2) {
+			c = c - 5;
+		}
+		switch(c) {
+			case 1:
+				print('%d', c);
+				break;
+			case 2:
+				print('%f', b);
+				break;
+			default:
+				break;
+		}
+		if( c == 0) {
+			return c;
+		} elif( c > 0) {
+			c = c + 2;
+		} else {
+			c = c - 2;
+		}
+		return c;
+	}
+}
+
+main() {
+	int a = 0;
+	object example2 ob1 = example2();
+	call a = ob1.method(2);
+}
+

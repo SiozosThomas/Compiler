@@ -1,0 +1,25 @@
+struct example1
+{
+	int a;
+	int a1 = 0;
+	double b;
+	double b1 = 0;
+	char c;
+	char c1 = 'a';
+	int d[2];
+	int d1[3] = {1, 2, 3};
+};
+void example1@constructor0(example1 self)
+{
+	int d[2];
+	int d1[3] = {1, 2, 3};
+	self.a =self.a1;
+	self.a =self.a1 +  1;
+	self.b =self.b +  3.200000;
+}
+int main() {
+	struct example1 ob;
+	ob.example1@constructor0(ob);
+	example1(ob,);
+	return 0;
+}
