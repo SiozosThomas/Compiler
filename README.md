@@ -1,5 +1,5 @@
-# Ocean Compiler
-:ocean:
+# Ocean Compiler :ocean:
+
 Στόχος του project είναι η μεταγλώττιση μιάς αυτοσχέδιας αντικειμενοοστραφής
 προγραμματιστικής γλώσσας που ονομάστηκε Ocean. Χρησιμοποιήθηκαν τα εργαλεία
 [lex](https://silcnitc.github.io/lex.html) και [bison](https://www.gnu.org/software/bison/).
