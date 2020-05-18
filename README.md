@@ -1,5 +1,5 @@
-# EEL Compiler
-
+# Ocean Compiler
+:ocean:
 Στόχος του project είναι η μεταγλώττιση μιάς αυτοσχέδιας αντικειμενοοστραφής
 προγραμματιστικής γλώσσας που ονομάστηκε Ocean. Χρησιμοποιήθηκαν τα εργαλεία
 [lex](https://silcnitc.github.io/lex.html) και [bison](https://www.gnu.org/software/bison/).
@@ -120,3 +120,11 @@
 
 1. make
 1. ./a.out <input_file.txt> <output_file.txt>
+
+## Testing
+
+Αρχείο εισόδο: "example1.txt"<br/>
+![Alt Text](/testing/example1.png)<br/>
+Αρχείο εξόδου: "example1out.txt"<br/>
+![Alt Text](/testing/example1out.png)<br/>
+Περισσότερα tests στον φάκελο "testing".
