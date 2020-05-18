@@ -114,3 +114,9 @@
 \<array_expr>		::= id [digit]<br/>
 \<operations>		::= + | - | * | / | ^ | – | ++<br/>
 \<relationaloper>		::= == | < | > | <= | >= | !=<br/>
+
+
+## Running the project
+
+1. make
+1. ./a.out <input_file.txt> <output_file.txt>
