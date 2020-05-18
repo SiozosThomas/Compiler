@@ -40,10 +40,10 @@
 \<object_values>		::= object id id ;<br/>
 \<constructors>		::= ε | id (  <parlist> ) { <constructor_block> }<br/>
 \<methods>			::= ε | void id ( <parlist> ) { (<method_block>)* }<br/>
-&#9;&#9;&#9;&#9;|  int id ( <parlist> ) { (<method_block>)* }<br/>
-&#9;&#9;&#9;&#9;| double id ( <parlist> ) { (<method_block>)* }<br/>
-&#9;&#9;&#9;&#9;| char id ( <parlist> ) { (<method_block>)* }<br/>
-&#9;&#9;&#9;&#9;| abstract id ( ) ;<br/>
+                |  int id ( <parlist> ) { (<method_block>)* }<br/>
+                | double id ( <parlist> ) { (<method_block>)* }<br/>
+                | char id ( <parlist> ) { (<method_block>)* }<br/>
+                | abstract id ( ) ;<br/>
 \<parlist>			::= ε | <parlist_types> | (, <parlist_types> )*<br/>
 \<par_int>			::= ε | id | [ digit ] id<br/>
 \<constructor_block>	::= (<method_block>)*<br/>
