@@ -21,33 +21,33 @@
 
 ## Ocean's Grammar
 
-\<program\>	:= <class_type> <main><br/>
-<main>			::= main ( ) { <method_block> }<br/>
-<class_type>		::= ε | (<class>)* | (<interface>)*<br/>
-<class>			::= class id { <block> } | class id extends id { <block> }<br/>
-<interface>			::= interface id { (<interface_block>)* }<br/>
-<block>			::= <declarations> (<constructors>)* (<methods>)*<br/>
-<interface_block>		::= ε | id ( ) ;<br/>
+\<program\>	::= <class_type> <main><br/>
+\<main>			::= main ( ) { <method_block> }<br/>
+\<class_type>		::= ε | (<class>)* | (<interface>)*<br/>
+\<class>			::= class id { <block> } | class id extends id { <block> }<br/>
+\<interface>			::= interface id { (<interface_block>)* }<br/>
+\<block>			::= <declarations> (<constructors>)* (<methods>)*<br/>
+\<interface_block>		::= ε | id ( ) ;<br/>
 <declarations>		::= ε | public (<values_list>)* endpublic<br/>
-<values_list>		::= ε | <int_values> | <double_values> | <char_values> | <object_values><br/>
-<int_values>		::= int <array_or_not><br/>
-<array_or_not>		::= id <init_int_rule> | [digit] id <int_array_rule><br/>
-<int_array_rule>		::= ; | = { <many_digits> } ;<br/>
-<many_digits>		::= digit | (digit)*<br/>
-<init_int_rule>		::= ε | ; | = ( <expression> )* ;<br/>
-<double_values>		::= double id ; | double id = (<expression>)* ;<br/>
-<char_values>		::= char id ; | char id = char ;<br/>
-<object_values>		::= object id id ;<br/>
-<constructors>		::= ε | id (  <parlist> ) { <constructor_block> }<br/>
-<methods>			::= ε | void id ( <parlist> ) { (<method_block>)* }<br/>
+\<values_list>		::= ε | <int_values> | <double_values> | <char_values> | <object_values><br/>
+\<int_values>		::= int <array_or_not><br/>
+\<array_or_not>		::= id <init_int_rule> | [digit] id <int_array_rule><br/>
+\<int_array_rule>		::= ; | = { <many_digits> } ;<br/>
+\<many_digits>		::= digit | (digit)*<br/>
+\<init_int_rule>		::= ε | ; | = ( <expression> )* ;<br/>
+\<double_values>		::= double id ; | double id = (<expression>)* ;<br/>
+\<char_values>		::= char id ; | char id = char ;<br/>
+\<object_values>		::= object id id ;<br/>
+\<constructors>		::= ε | id (  <parlist> ) { <constructor_block> }<br/>
+\<methods>			::= ε | void id ( <parlist> ) { (<method_block>)* }<br/>
 				        |  int id ( <parlist> ) { (<method_block>)* }<br/>
 				        | double id ( <parlist> ) { (<method_block>)* }<br/>
 				        | char id ( <parlist> ) { (<method_block>)* }<br/>
 				        | abstract id ( ) ;<br/>
-<parlist>			::= ε | <parlist_types> | (, <parlist_types> )*<br/>
-<par_int>			::= ε | id | [ digit ] id<br/>
-<constructor_block>	::= (<method_block>)*<br/>
-<method_block>		::= ε |  <assignment> |<br/>
+\<parlist>			::= ε | <parlist_types> | (, <parlist_types> )*<br/>
+\<par_int>			::= ε | id | [ digit ] id<br/>
+\<constructor_block>	::= (<method_block>)*<br/>
+\<method_block>		::= ε |  <assignment> |<br/>
 					<ifstat> |<br/>
 					<whilestat> |<br/>
 					<switchstat> |<br/>
