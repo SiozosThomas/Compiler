@@ -47,16 +47,16 @@
 \<parlist>			::= ε | <parlist_types> | (, <parlist_types> )*<br/>
 \<par_int>			::= ε | id | [ digit ] id<br/>
 \<constructor_block>	::= (<method_block>)*<br/>
-\<method_block>		::= ε |  <assignment> |<br/>
-					<ifstat> |<br/>
-					<whilestat> |<br/>
-					<switchstat> |<br/>
-					<forstat> |<br/>
-					<callstat> |<br/>
-					<returnstat> |<br/>
-					<inputstat> |<br/>
-					<printstat> |<br/>
-					<super><br/>
+\<method_block>		::= ε |  <assignment> <br/>
+          | <ifstat><br/>
+					| <whilestat><br/>
+					| <switchstat><br/>
+					| <forstat><br/>
+					| <callstat><br/>
+					| <returnstat><br/>
+					| <inputstat><br/>
+					| <printstat><br/>
+					| <super><br/>
 \<assignment>		::= int <local_array_or_not><br/>
 					| id = (<expression>)* ;<br/>
 					| double id = (<expression>)*;<br/>
