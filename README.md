@@ -21,7 +21,7 @@
 
 ## Ocean's Grammar
 
-<program>	:= <class_type> <main><br/>
+\<program\>	:= <class_type> <main><br/>
 <main>			::= main ( ) { <method_block> }<br/>
 <class_type>		::= ε | (<class>)* | (<interface>)*<br/>
 <class>			::= class id { <block> } | class id extends id { <block> }<br/>
