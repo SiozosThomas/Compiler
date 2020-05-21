@@ -130,4 +130,4 @@
 Περισσότερα tests στον φάκελο "testing".
 
 ## Copyright
-[MIT](https://github.com/SiozosThomas/Ocean-Compiler/blob/master/LICENSE) (c) 2020 Thomas Siozos
+[MIT](https://github.com/SiozosThomas/Ocean-Compiler/blob/master/LICENSE) © 2020 Thomas Siozos
