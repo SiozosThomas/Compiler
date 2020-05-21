@@ -128,3 +128,6 @@
 Αρχείο εξόδου: "example1out.txt"<br/>
 ![Alt Text](/testing/example1out.png)<br/>
 Περισσότερα tests στον φάκελο "testing".
+
+## Copyright
+[MIT](https://github.com/SiozosThomas/Ocean-Compiler/blob/master/LICENSE) (c) 2020 Thomas Siozos
